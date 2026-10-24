@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <center>
+
+    <h1>REGISTER HERE</h1>
+
+    <form action="home.html" method="post">
+
+        <label><b>First Name:</b></label><br>
+        <input type="text" id="Firstname" placeholder="Enter First Name" required> <br>
+        <label><b>Last Name:</b></label><br>
+        <input type="text" id="Latname" placeholder="Enter Last Name" required>
+        <br>
+
+        <label><b>Username:</b></label><br>
+        <input type="text" name="txtuname" placeholder="Enter Username" maxlength="15" required>
+        <br>
+
+        <label><b>Email:</b></label><br>
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <br>
+
+        <label><b>Password:</b></label><br>
+        <input type="password" name="txtpsd" placeholder="Enter Password" required>
+        <br>
+
+        <label><b>Confirm Password:</b></label><br>
+        <input type="password" name="confirmpassword" placeholder="Confirm Password" required>
+        <br>
+
+        <label><b>Date of Birth:</b></label><br>
+        <input type="date" name="dob">
+        <br>
+
+        <label><b>Gender:</b></label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+        <br>
+
+        <label><b>Phone Number:</b></label><br>
+        <input type="tel" name="phone" placeholder="Enter Phone Number">
+        <br>
+
+        <label><b>Department:</b></label><br>
+        <select name="department">
+            <option>Select Department</option>
+            <option>Computer Engineering</option>
+            <option>Information Technology</option>
+            <option>Civil Engineering</option>
+            <option>Mechanical Engineering</option>
+            <option>Electrical Engineering</option>
+        </select>
+        <br>
+
+        <label><b>Skills:</b></label><br>
+        <input type="checkbox" name="skill" value="Java"> Java
+        <input type="checkbox" name="skill" value="C"> C
+        <input type="checkbox" name="skill" value="Python"> Python
+        <input type="checkbox" name="skill" value="HTML"> HTML
+        <br>
+
+        <label><b>Address:</b></label><br>
+        <textarea rows="4" cols="30" placeholder="Enter Address"></textarea>
+        <br>
+
+        <input type="checkbox" required>
+        <label>I accept the Terms & Conditions</label>
+        <br>
+
+       
+
+    </form>
+    <input type="submit" value="Register">
+</center>
+</body>
+</html>
