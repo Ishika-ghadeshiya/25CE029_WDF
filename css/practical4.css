@@ -1,0 +1,149 @@
+
+/* General layout */
+.p4-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 15px;
+    background: #e8f0ff;
+}
+
+#navMenu {
+    display: flex;
+    gap: 18px;
+}
+
+#navMenu a {
+    text-decoration: none;
+    color: #173b75;
+}
+
+button {
+    cursor: pointer;
+    padding: 9px 14px;
+    border: 1px solid #b7c5d8;
+    border-radius: 6px;
+}
+
+.p4-section {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+/* FAQ */
+.faq-question {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+    background: #e8f0ff;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background: #f5f7fb;
+}
+
+.faq-answer.show {
+    display: block;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 12px;
+    background: white;
+    color: #222;
+}
+
+/* Slider */
+.slide {
+    display: none;
+    padding: 35px 20px;
+    min-height: 100px;
+    background: #e8f0ff;
+    border-radius: 10px;
+}
+
+.slide.active {
+    display: block;
+}
+
+/* Notification */
+.notice {
+    padding: 14px;
+    margin: 15px;
+    background: #fff0bd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Dark theme */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+body.dark-theme {
+    color: #f1f1f1;
+    background: #181818;
+}
+
+.dark-theme .p4-header,
+.dark-theme .faq-question,
+.dark-theme .faq-answer,
+.dark-theme .slide {
+    background: #292929;
+    color: #f1f1f1;
+}
+
+.dark-theme #navMenu a {
+    color: #b9d2ff;
+}
+
+/* Mobile navigation */
+@media (max-width: 600px) {
+    .p4-header {
+        align-items: stretch;
+    }
+
+    #navMenu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #navMenu.menu-open {
+        display: flex;
+    }
+
+    .p4-section {
+        margin: 15px;
+        padding: 12px;
+    }
+}
