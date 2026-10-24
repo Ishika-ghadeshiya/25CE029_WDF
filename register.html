@@ -1,80 +1,81 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-      <link rel="stylesheet" href="css/style.css">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="css/practical5.css">
 </head>
 <body>
 
-    <h1>REGISTER HERE</h1>
+    <div class="container">
+        <h1>Student Registration</h1>
 
-    <form action="home.html" method="post">
+        <form id="registrationForm" novalidate>
 
-        <label><b>Full Name:</b></label><br>
-        <input type="text" name="fullname" placeholder="Enter Full Name" required>
-        <br><br>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+            <small id="nameError"></small>
 
-        <label><b>Username:</b></label><br>
-        <input type="text" name="txtuname" placeholder="Enter Username" maxlength="15" required>
-        <br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <small id="emailError"></small>
 
-        <label><b>Email:</b></label><br>
-        <input type="email" name="email" placeholder="Enter Email" required>
-        <br><br>
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" placeholder="10-digit mobile number" required>
+            <small id="mobileError"></small>
 
-        <label><b>Password:</b></label><br>
-        <input type="password" name="txtpsd" placeholder="Enter Password" required>
-        <br><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+            <small id="passwordError"></small>
 
-        <label><b>Confirm Password:</b></label><br>
-        <input type="password" name="confirmpassword" placeholder="Confirm Password" required>
-        <br><br>
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+            <small id="confirmPasswordError"></small>
 
-        <label><b>Date of Birth:</b></label><br>
-        <input type="date" name="dob">
-        <br><br>
+            <label for="course">Course</label>
+            <select id="course" required>
+                <option value="">Select Course</option>
+                <option value="CE">Computer Engineering</option>
+                <option value="IT">Information Technology</option>
+                <option value="CSE">Computer Science</option>
+                <option value="EC">Electronics Engineering</option>
+            </select>
+            <small id="courseError"></small>
 
-        <label><b>Gender:</b></label><br>
-        <input type="radio" name="gender" value="Male"> Male
-        <input type="radio" name="gender" value="Female"> Female
-        <input type="radio" name="gender" value="Other"> Other
-        <br><br>
+            <label for="year">Year of Study</label>
+            <select id="year" required>
+                <option value="">Select Year</option>
+                <option value="1">First Year</option>
+                <option value="2">Second Year</option>
+                <option value="3">Third Year</option>
+                <option value="4">Fourth Year</option>
+            </select>
+            <small id="yearError"></small>
 
-        <label><b>Phone Number:</b></label><br>
-        <input type="tel" name="phone" placeholder="Enter Phone Number">
-        <br><br>
+            <label>Gender</label>
+            <div class="gender">
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+            <small id="genderError"></small>
 
-        <label><b>Department:</b></label><br>
-        <select name="department">
-            <option>Select Department</option>
-            <option>Computer Engineering</option>
-            <option>Information Technology</option>
-            <option>Civil Engineering</option>
-            <option>Mechanical Engineering</option>
-            <option>Electrical Engineering</option>
-        </select>
-        <br><br>
+            <div class="terms">
+                <label>
+                    <input type="checkbox" id="terms">
+                    I accept the terms and conditions
+                </label>
+            </div>
+            <small id="termsError"></small>
 
-        <label><b>Skills:</b></label><br>
-        <input type="checkbox" name="skill" value="Java"> Java
-        <input type="checkbox" name="skill" value="C"> C
-        <input type="checkbox" name="skill" value="Python"> Python
-        <input type="checkbox" name="skill" value="HTML"> HTML
-        <br><br>
+            <button type="submit">Register</button>
+            <p id="successMessage" role="status"></p>
 
-        <label><b>Address:</b></label><br>
-        <textarea rows="4" cols="30" placeholder="Enter Address"></textarea>
-        <br><br>
+        </form>
+    </div>
 
-        <input type="checkbox" required>
-        <label>I accept the Terms & Conditions</label>
-        <br><br>
-
-       
-
-    </form>
-
+    <script src="JS/practical5.js"></script>
 </body>
 </html>
