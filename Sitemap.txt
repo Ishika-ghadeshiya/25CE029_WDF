@@ -1,0 +1,32 @@
+StudentHub
+│
+├── Home
+│   └── home.html
+│
+├── Login
+│   └── login.html
+│
+├── Register
+│   └── register.html
+│
+└── Dashboard
+    ├── About
+    │   └── about.html
+    │
+    ├── Assignments
+    │   └── assignments.html
+    │
+    ├── Events
+    │   └── events.html
+    │
+    ├── FAQs
+    │   └── FAQ.html
+    │
+    ├── Feedback
+    │   └── feedback.html
+    │
+    ├── Profile
+    │   └── profile.html
+    │
+    └── Timetable
+        └── timetable.html
