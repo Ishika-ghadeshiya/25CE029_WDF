@@ -9,7 +9,9 @@
        padding: auto;
         }
     </style>
+      <link rel="stylesheet" href="./CSS/practical4.css">
 </head>
+
 <body>
 
      <h1 style="text-align: center;"><i>WELCOME TO STUDENTHUB</i></h1>
@@ -20,6 +22,82 @@
      
 
         </nav>
-      
+        
+<!-- Hamburger Navigation -->
+<header class="p4-header">
+    <button id="menuToggle" aria-expanded="false">☰ Menu</button>
+    <nav id="navMenu">
+        <a href="Home.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Events.html">Events</a>
+    </nav>
+    <button id="themeToggle">🌙 Dark Mode</button>
+</header>
+
+<!-- Notification Banner -->
+<div id="notice" class="notice">
+    📢 Welcome to StudentHub!
+    <button id="closeNotice" aria-label="Close notification">✕</button>
+</div>
+
+<!-- Collapsible FAQ -->
+<section class="p4-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <button class="faq-question" aria-expanded="false">
+        What is StudentHub?
+    </button>
+    <div class="faq-answer">
+        StudentHub provides students with academic information and updates.
+    </div>
+
+    <button class="faq-question" aria-expanded="false">
+        How can I check events?
+    </button>
+    <div class="faq-answer">
+        Open the Events page to view college events.
+    </div>
+</section>
+
+<!-- Modal Popup -->
+<section class="p4-section">
+    <h2>Need Help?</h2>
+    <button id="openModal">Open Quick Help</button>
+</section>
+
+<div id="helpModal" class="modal">
+    <div class="modal-content">
+        <button id="closeModal" aria-label="Close popup">✕</button>
+        <h2>Quick Help</h2>
+        <p>Use the navigation menu to access StudentHub pages.</p>
+    </div>
+</div>
+
+<!-- Content Slider -->
+<section class="p4-section">
+    <h2>StudentHub Highlights</h2>
+
+    <div class="slider">
+        <div class="slide active">
+            <h3>📚 Academics</h3>
+            <p>Access assignments and study information.</p>
+        </div>
+
+        <div class="slide">
+            <h3>🎉 College Events</h3>
+            <p>Stay updated with campus activities.</p>
+        </div>
+
+        <div class="slide">
+            <h3>📅 Timetable</h3>
+            <p>Keep track of your class schedule.</p>
+        </div>
+    </div>
+
+    <button id="prevSlide">← Previous</button>
+    <button id="nextSlide">Next →</button>
+</section>
+
+      <script src="./JS/practical4.js"></script>
 </body>
 </html>
