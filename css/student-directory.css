@@ -1,0 +1,148 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background: #174ea6;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.controls input,
+.controls select {
+    flex: 1 1 200px;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background: white;
+    font-size: 15px;
+}
+
+#resultCount {
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.student-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}
+
+.student-card h2 {
+    color: #174ea6;
+    font-size: 20px;
+    margin: 0 0 12px;
+}
+
+.student-card p {
+    overflow-wrap: anywhere;
+    line-height: 1.5;
+    margin: 8px 0;
+}
+
+.course {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 15px;
+    background: #dbeafe;
+    color: #174ea6;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 28px 0;
+}
+
+.pagination button {
+    padding: 9px 14px;
+    border: 1px solid #174ea6;
+    border-radius: 5px;
+    background: white;
+    color: #174ea6;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background: #174ea6;
+    color: white;
+}
+
+.pagination button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+#message {
+    text-align: center;
+    color: #475569;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    background: #e2e8f0;
+    padding: 15px;
+}
+
+@media (max-width: 800px) {
+    .student-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .student-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+}

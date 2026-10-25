@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <h1>LOGIN PAGE</h1>
-     <form action="dashboard.html" method="post">
+
+    <form action="login.php" method="POST">
         <table>
-
+            <tr>
+                <td>
+                    <b>EMAIL:</b>
+                    <input type="email" name="email"
+                           placeholder="Enter your registered email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>PASSWORD:</b>
+                    <input type="password" name="password"
+                           placeholder="Enter your password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Login" id="btnlogin">
+                </td>
+            </tr>
         </table>
+    </form>
 
- <tr>
-        <td>
-            <b>USERNAME:</b>
-            <input placeholder="Enter your username" maxlength="15"   name="txtuname" id="" />
-        </td><br>
-        <td>
-            <b>PASSWORD:</b>
-             <input placeholder="Enter your password" type="password" name="txtpsd" id=""/>
-        </td>
-    </tr>
-    <br>
-    <td>  <input type="submit"  value="login"name="" id="btnlogin"></td>
-
-
-     </form>
 </body>
 </html>

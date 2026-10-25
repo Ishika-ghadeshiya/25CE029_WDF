@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Directory</title>
+   <link rel="stylesheet" href="css/student-directory.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Directory</h1>
+        <p>Search, filter and explore student records</p>
+    </header>
+
+    <main class="container">
+        <section class="controls" aria-label="Student controls">
+            <input
+                type="search"
+                id="search"
+                placeholder="Search by name or email..."
+                aria-label="Search students by name or email"
+            >
+
+            <select id="courseFilter" aria-label="Filter by course">
+                <option value="all">All Courses</option>
+                <option value="CE">Computer Engineering</option>
+                <option value="IT">Information Technology</option>
+                <option value="CSE">Computer Science</option>
+            </select>
+
+            <select id="sortBy" aria-label="Sort students">
+                <option value="nameAsc">Name: A to Z</option>
+                <option value="nameDesc">Name: Z to A</option>
+                <option value="yearAsc">Year: Low to High</option>
+                <option value="yearDesc">Year: High to Low</option>
+            </select>
+        </section>
+
+        <p id="resultCount" aria-live="polite"></p>
+        <p id="message" role="status">Loading students...</p>
+
+        <section id="studentList" class="student-grid"
+            aria-label="Student records">
+        </section>
+
+        <nav id="pagination" class="pagination"
+            aria-label="Student list pages">
+        </nav>
+    </main>
+
+    <footer>
+        <p>Student Directory &copy; 2026</p>
+    </footer>
+
+    <script src="JS/student-directory.js"></script>
+</body>
+</html>

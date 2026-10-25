@@ -94,10 +94,7 @@ form.addEventListener("submit", function (event) {
     }
 
     // Final result
-    if (valid) {
-        document.getElementById("successMessage").textContent =
-            "Registration successful!";
-
-        form.reset();
-    }
+ if (valid) {
+    form.submit();
+}
 });

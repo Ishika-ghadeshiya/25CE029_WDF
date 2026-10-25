@@ -1,0 +1,59 @@
+
+[
+    {
+        "id": 1,
+        "name": "Aarav Patel",
+        "email": "aarav@example.com",
+        "course": "CE",
+        "year": 2
+    },
+    {
+        "id": 2,
+        "name": "Diya Shah",
+        "email": "diya@example.com",
+        "course": "IT",
+        "year": 1
+    },
+    {
+        "id": 3,
+        "name": "Krish Mehta",
+        "email": "krish@example.com",
+        "course": "CE",
+        "year": 3
+    },
+    {
+        "id": 4,
+        "name": "Anaya Desai",
+        "email": "anaya@example.com",
+        "course": "CSE",
+        "year": 2
+    },
+    {
+        "id": 5,
+        "name": "Rohan Joshi",
+        "email": "rohan@example.com",
+        "course": "IT",
+        "year": 4
+    },
+    {
+        "id": 6,
+        "name": "Isha Trivedi",
+        "email": "isha@example.com",
+        "course": "CSE",
+        "year": 1
+    },
+    {
+        "id": 7,
+        "name": "Dev Parmar",
+        "email": "dev@example.com",
+        "course": "CE",
+        "year": 4
+    },
+    {
+        "id": 8,
+        "name": "Mira Joshi",
+        "email": "mira@example.com",
+        "course": "IT",
+        "year": 2
+    }
+]
